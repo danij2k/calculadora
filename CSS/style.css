@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: all 0.8s ease;
+}
+
+body {
+  background: linear-gradient(45deg, #7c62f0, #8ab1af);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(83, 113, 131);
+  background-color: #ffffff;
+}
+.calculator #display {
+  color: #0a1e23;
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculator #equal {
+  height: 130px;
+}
+.calculator #clear {
+  background-color: #bacffc;
+  color: #4557fc;
+}
+.calculator .btn-number {
+  background-color: #ffd1c3;
+  color: #000000;
+}
+.calculator .btn-operator {
+  background-color: #99f8a6dc;
+  color: #000000;
+}
+.calculator .btn-equal {
+  background-color: #adddf9;
+  color: #000;
+}
+/* dark theme */
+.calculator.dark {
+  background-color: #070707;
+}
+.calculator.dark #display {
+  color: #50bcf1;
+}
+.calculator.dark #clear {
+  background-color: #aa3535;
+  color: white;
+}
+.calculator.dark .btn-number {
+  background-color: #dce969;
+  color: black;
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: #c75615;
+  color: #0028aa;
+}
+.calculator.dark .btn-equal {
+  background-color: #0d37aa;
+  color: #ffffff;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: #fff;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  transform: scale(1.1);
+} /*# sourceMappingURL=style.css.map */
